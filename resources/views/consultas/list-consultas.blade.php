@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header"><a href="{{url('consultas/new')}}">Agendar uma nova consulta</a> </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -48,9 +48,7 @@
                           </tr>
                           @endforeach 
                         </tbody>
-                      </table>
-                    <a href="{{url('consultas/new')}}">Agendar uma nova consulta</a> 
-                    <br> 
+                      </table> 
                     <a href="{{ url('/') }}">Voltar</a>
                 </div>
             </div>
